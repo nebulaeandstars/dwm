@@ -131,7 +131,7 @@ static Key keys[] = {
     { MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
     { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
     { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-    { MODKEY,                       XK_space,  setlayout,      {0} },
+    /* { MODKEY,                       XK_space,  setlayout,      {0} }, */
     { MODKEY,                       XK_Tab,    view,           {0} },
     { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 
@@ -166,7 +166,7 @@ static Button buttons[] = {
     { ClkStatusText,        0,              Button3,        sigdwmblocks,   {.i = 3} },
     { ClkStatusText,        0,              Button4,        sigdwmblocks,   {.i = 4} },
     { ClkStatusText,        0,              Button5,        sigdwmblocks,   {.i = 5} },
-    { ClkStatusText|ShiftMask, 0,           Button1,        sigdwmblocks,   {.i = 6} },
+    { ClkStatusText,        ShiftMask,      Button1,        sigdwmblocks,   {.i = 6} },
     { ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
     { ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
     { ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
