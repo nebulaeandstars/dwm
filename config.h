@@ -93,6 +93,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
+#include "movestack.c"
 static Key keys[] = {
     /* modifier                     key        function        argument */
 
@@ -100,10 +101,12 @@ static Key keys[] = {
     { MODKEY,                       XK_b,      togglebar,      {0} },
     { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
     { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-    { MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
-    { MODKEY|ShiftMask,             XK_k,      rotatestack,    {.i = -1 } },
-    { MODKEY|ControlMask,           XK_k,      incnmaster,     {.i = +1 } },
-    { MODKEY|ControlMask,           XK_j,      incnmaster,     {.i = -1 } },
+    { MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
+    { MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
+    { MODKEY|ControlMask,           XK_j,      rotatestack,    {.i = +1 } },
+    { MODKEY|ControlMask,           XK_k,      rotatestack,    {.i = -1 } },
+    { MODKEY|Mod1Mask,              XK_j,      incnmaster,     {.i = -1 } },
+    { MODKEY|Mod1Mask,              XK_k,      incnmaster,     {.i = +1 } },
     { MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
     { MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
     { MODKEY,                       XK_space,  zoom,           {0} },
