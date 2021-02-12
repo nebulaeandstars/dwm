@@ -162,8 +162,7 @@ static Key keys[] = {
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
     /* click                event mask      button          function        argument */
-    /* { ClkLtSymbol,          0,              Button1,        setlayout,      {0} }, */
-    { ClkLtSymbol,          0,              Button1,        layoutmenu,      {0} },
+    { ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
     { ClkLtSymbol,          0,              Button3,        layoutmenu,     {0} },
     { ClkWinTitle,          0,              Button2,        zoom,           {0} },
     { ClkStatusText,        0,              Button1,        sigdwmblocks,   {.i = 1} },
