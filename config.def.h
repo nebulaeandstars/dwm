@@ -14,6 +14,8 @@ static       int smartgaps          = 0;        /* 1 means no outer gap when the
 
 static const char *fonts[] = {
     "monospace:size=12",
+    "ionicons:pixelsize=12:antialias=true:autohint=true",
+    "Nerd Font Complete:pixelsize=12:antialias=true:autohint=true",
     "NotoColorEmoji:pixelsize=12:antialias=true:autohint=true",
     "JoyPixels:pixelsize=12:antialias=true:autohint=true"
 };
