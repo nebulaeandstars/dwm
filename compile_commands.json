@@ -1,0 +1,65 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-std=c99",
+      "-pedantic",
+      "-Wall",
+      "-Wno-deprecated-declarations",
+      "-Os",
+      "-I/usr/X11R6/include",
+      "-I/usr/include/freetype2",
+      "-D_DEFAULT_SOURCE",
+      "-D_BSD_SOURCE",
+      "-D_POSIX_C_SOURCE=200809L",
+      "-DVERSION=\"6.2\"",
+      "-DXINERAMA",
+      "drw.c"
+    ],
+    "directory": "/home/laura/.local/src/suckless/dwm",
+    "file": "/home/laura/.local/src/suckless/dwm/drw.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-std=c99",
+      "-pedantic",
+      "-Wall",
+      "-Wno-deprecated-declarations",
+      "-Os",
+      "-I/usr/X11R6/include",
+      "-I/usr/include/freetype2",
+      "-D_DEFAULT_SOURCE",
+      "-D_BSD_SOURCE",
+      "-D_POSIX_C_SOURCE=200809L",
+      "-DVERSION=\"6.2\"",
+      "-DXINERAMA",
+      "dwm.c"
+    ],
+    "directory": "/home/laura/.local/src/suckless/dwm",
+    "file": "/home/laura/.local/src/suckless/dwm/dwm.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-std=c99",
+      "-pedantic",
+      "-Wall",
+      "-Wno-deprecated-declarations",
+      "-Os",
+      "-I/usr/X11R6/include",
+      "-I/usr/include/freetype2",
+      "-D_DEFAULT_SOURCE",
+      "-D_BSD_SOURCE",
+      "-D_POSIX_C_SOURCE=200809L",
+      "-DVERSION=\"6.2\"",
+      "-DXINERAMA",
+      "util.c"
+    ],
+    "directory": "/home/laura/.local/src/suckless/dwm",
+    "file": "/home/laura/.local/src/suckless/dwm/util.c"
+  }
+]
